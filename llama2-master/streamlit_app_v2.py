@@ -7,6 +7,7 @@ st.set_page_config(page_title="🦙💬 Llama 2 Chatbot")
 
 # Replicate Credentials
 with st.sidebar:
+    """
     try:
         st.title('🦙💬 Llama 2 Chatbot')
         if 'REPLICATE_API_TOKEN' in st.secrets:
@@ -18,8 +19,8 @@ with st.sidebar:
                 st.warning('Please enter your credentials!', icon='⚠️')
             else:
                 st.success('Proceed to entering your prompt message!', icon='👉')
-    except:
-        replicate_api = "r8_e0XnAf576fo3EiN78ahslWx8RTomO7H0deUth"
+    """
+    replicate_api = "r8_e0XnAf576fo3EiN78ahslWx8RTomO7H0deUth"
 
     # Refactored from https://github.com/a16z-infra/llama2-chatbot
     st.subheader('Models and parameters')
